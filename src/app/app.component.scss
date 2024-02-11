@@ -1,0 +1,25 @@
+.black, option{
+    background-color: seashell;
+    color: black;
+    font-weight: bold;
+    border: 1px solid;
+}
+.black:hover,
+.black:active,
+.black:focus{
+    box-shadow: none;
+}
+
+.bg1{
+    background-color: linen;
+    font-size: 20px;
+}
+.bordered{
+    border: 1px solid;
+}
+
+.bg2{
+    background-color: black;
+    color: azure;
+    
+}
