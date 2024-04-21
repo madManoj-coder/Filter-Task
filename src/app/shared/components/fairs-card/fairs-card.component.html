@@ -1,0 +1,18 @@
+
+<div class="card mb-2">
+    <div class="card-body fairCard">
+        <h4 class="text-white text-uppercase">
+            <strong>
+                {{fairObj.fairName}}
+            </strong>
+        </h4>
+        <div class="typeAndDate">
+            <p class="m-0">
+                Event Type : <strong> {{fairObj.type}} </strong>
+            </p>
+            <p class="m-0">
+                Date : <strong> {{fairObj.startDate * 1000 | date}} </strong>
+            </p>
+        </div>
+    </div>
+</div>

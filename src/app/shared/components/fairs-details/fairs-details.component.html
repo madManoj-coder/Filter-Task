@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-body">
+        <div class="bannerImg">
+            <img [src]="fairDetails.bannerUrl" class="img" [alt]="fairDetails.fairName"
+                [title]="fairDetails.fairName">
+        </div>
+        <div class="heading">
+            <strong>
+                {{fairDetails.fairName}}
+            </strong>
+            <br>
+            <strong>
+               Date {{fairDetails.startDate * 1000 | date}}
+            </strong>
+        </div>
+
+        <p [innerHTML]="fairDetails.candidateDescription">
+
+        </p>
+    </div>
+</div>

@@ -1,48 +1,9 @@
-<h1 class="text-center p-3 alert alert-info">Filter Pipe Task</h1>
+<h1 class="p-4 text-center h1 mb-2">Fairs</h1>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 mt-4">
-            <input type="text" [(ngModel)]="searchValue" class="form-control bordered" placeholder="search value...">
-        </div>
-        <div class="col-md-2">
-            <select class="form-control mt-4 black" (change)="onSelect(eleRef)" #eleRef>
-                <option value="filterBy">FilterBy</option>
-                <option value="name">Name</option>
-                <option value="team">Team</option>
-                <option value="odiRuns">ODI Runs</option>
-                <option value="testRuns">Test Runs</option>
-                <option value="yearDebut">yearDebut</option>
-            </select>
-        </div>
-    </div>
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
-            <div class="table-responsive">
-                <table class="table table-bordered mt-4 text-center">
-                    <thead class="bg1">
-                        <tr>
-                            <th><strong>Sr.No</strong></th>
-                            <th><strong>Name</strong></th>
-                            <th><strong>Team</strong></th>
-                            <th><strong>ODI Runs</strong></th>
-                            <th><strong>Test Runs</strong></th>
-                            <th><strong>Year Debut</strong></th>
-                        </tr>
-                    </thead>
-                    <tbody class="bg2">
-                        <tr *ngFor="let player of playersArray | filter : searchValue : selectValue; index as i">
-                            <td><strong>{{i + 1}}</strong></td>
-                            <td><strong>{{player.name}}</strong></td>
-                            <td><strong>{{player.team}}</strong></td>
-                            <td><strong>{{player.odiRuns}}</strong></td>
-                            <td><strong>{{player.testRuns}}</strong></td>
-                            <td><strong>{{player.yearDebut}}</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
+            <app-fairs-dashboard></app-fairs-dashboard>
         </div>
     </div>
 </div>

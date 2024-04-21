@@ -1,0 +1,26 @@
+.card {
+    box-shadow: 1px 2px 31px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 2px 31px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 2px 31px 3px rgba(0, 0, 0, 0.75);
+
+    .bannerImg {
+        width: 100%;
+        filter: brightness(.6);
+        // display: flex;
+        position: relative;
+
+        .img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .heading {
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        font-size: 33px;
+        color: white;
+    }
+}
