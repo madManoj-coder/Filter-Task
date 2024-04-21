@@ -1,5 +1,8 @@
 
-<div class="card mb-2">
+<div class="card mb-2" (click)="onAdd()" [ngClass]="{
+    'active' : selectFairId == fairObj.fairId
+}"
+>
     <div class="card-body fairCard">
         <h4 class="text-white text-uppercase">
             <strong>

@@ -135,11 +135,19 @@ export class FairsDashboardComponent implements OnInit {
   ]
 
   selectedFair !: Ifairs;
-  
+  selectedFairId !: string;
+
   constructor() { }
 
   ngOnInit(): void {
     this.selectedFair = this.fairsArray[0]
+    this.selectedFairId = this.fairsArray[0].fairId
+  }
+
+  onCardAdd(fairObj: Ifairs) {
+    // this.selectedFair
+    this.selectedFair = fairObj
+    this.selectedFairId = fairObj.fairId
   }
 
 
